@@ -1,0 +1,27 @@
+
+.contact-info {
+    background-color: whitesmoke;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+}
+
+.contact-description {
+    margin: 30px;
+    text-align: center;
+}
+
+.contact-form {
+    width: 600px;
+    margin: 30px;
+}
+
+.contact-form input {
+    width: 300px;
+}
+
+#email-body {
+    width: 350px;
+    height: 100px;
+}

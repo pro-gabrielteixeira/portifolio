@@ -2,7 +2,12 @@
 
 .div-projects {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
     background-color: whitesmoke;
     border-radius: 50px;
+}
+
+app-project {
+    width: 400px;
 }

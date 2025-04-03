@@ -1,10 +1,13 @@
 .navbar {
+    position: sticky;
+    top: 10px;
+    // width: 90%;
     display: flex;
     justify-content: space-between;
     background-color: whitesmoke;
     align-items: center;
     border-radius: 50px;
-    margin: 20px;
+    margin: 30px;
 }
 
 .nav-list {
@@ -17,6 +20,10 @@
 .nav-list li {
     list-style: none;
     cursor: pointer;
+}
+
+.nav-list li:hover {
+    color: darkslategrey;
 }
 
 .navbar a {

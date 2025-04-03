@@ -2,19 +2,20 @@
 .skills-main {
     margin: 30px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
     background-color: whitesmoke;
     border-radius: 50px;
 }
 
 .skills-description {
-    // display: flex;
-    // justify-content: center;
     text-align: center;
     margin: 30px;
+    width: 400px;
 }
 
 .skills-img {
     border-radius: 50px;
-    width: 800px;
+    width: 400px;
+    margin: 30px;
 }
