@@ -1,16 +1,99 @@
 .about-me {
     background-color: whitesmoke;
     border-radius: 50px;
-    margin: 20px;
+    margin: 20px auto;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    align-items: center;
+    width: 95%;
+    height: 20rem;
 }
 
-.about-me h1, a {
-    margin: 20px 60px 20px 30px;
+.about-me-description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 30%;
+}
+
+.about-me-description-text {
+    line-height: 4rem;
+    font-size: 1.5rem;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.cursor {
+    display: inline-block;
+    animation: blink 0.7s steps(1) infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+.about-me-picture {
+    width: 30%;
+    align-items: center;
+    text-align: center;
 }
 
 .img-profile {
-    width: 400px;
-    border-radius: 50%;
+    width: 20rem;
+    border-radius: 50px;
+}
+
+.personal-links {
+    text-align: center;
+    width: 30%;
+}
+
+.personal-links a {
+    display: block;
+    padding: 1.5rem;
+    background-color: rgb(41, 41, 41);
+    color: whitesmoke;
+    margin: 1rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: large;
+}
+
+.personal-links a:hover {
+    transition: all 0.3s ease;
+    transform: scale(1.1);
+    background-color: rgb(12, 12, 12);
+}
+
+@media (max-width: 864px) {
+    .about-me {
+        margin: 20px auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 90%;
+        height: 60rem;
+    }
+    
+    .about-me-description {
+        width: 90%;
+    }
+    
+    .about-me-picture {
+        width: 90%;
+    }
+    
+    .personal-links {
+        width: 90%;
+    }
+
+    .about-me-description-text {
+        font-size: 1.3rem;
+        font-weight: 500;
+    }
+
 }

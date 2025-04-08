@@ -37,12 +37,16 @@ export class NavbarComponent {
       
       this.showScrollToTop = (isMobile && window.scrollY > 200);
         
-      if (window.scrollY > 5) {
-        this.renderer.setStyle(document.getElementById('logo'), 'width', '5rem');
-        navbar.classList.add('shrink');
+      if (window.scrollY >= 5) {
+        setTimeout(() => {
+          this.renderer.setStyle(document.getElementById('logo'), 'width', '5rem');
+          navbar.classList.add('shrink');
+        }, 100)
       } else { 
-        this.renderer.setStyle(document.getElementById('logo'), 'width', '10rem');
-        navbar.classList.remove('shrink');
+        setTimeout(() => {
+          this.renderer.setStyle(document.getElementById('logo'), 'width', '10rem');
+          navbar.classList.remove('shrink');
+        }, 100)
     }
 
   }
