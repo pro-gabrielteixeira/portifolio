@@ -37,16 +37,12 @@ export class NavbarComponent {
       
       this.showScrollToTop = (isMobile && window.scrollY > 200);
         
-      if (window.scrollY >= 5) {
-        setTimeout(() => {
+      if (window.scrollY > 5) {
           this.renderer.setStyle(document.getElementById('logo'), 'width', '5rem');
           navbar.classList.add('shrink');
-        }, 100)
-      } else { 
-        setTimeout(() => {
+      } else if (window.scrollY <= 1) { 
           this.renderer.setStyle(document.getElementById('logo'), 'width', '10rem');
           navbar.classList.remove('shrink');
-        }, 100)
     }
 
   }
