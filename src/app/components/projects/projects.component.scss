@@ -3,11 +3,19 @@
 .div-projects {
     display: flex;
     justify-content: space-evenly;
+	margin: 20px auto;
     flex-wrap: wrap;
-    background-color: whitesmoke;
     border-radius: 50px;
+	width: 95%;
+	background-color: var(--current-line);
 }
 
 app-project {
-    width: 400px;
+    width: 90%;
+}
+
+@media (max-width: 864px) {
+	.div-projects {
+		width: 90%;
+	}
 }

@@ -1,9 +1,10 @@
 import { Component, HostListener, Renderer2 } from '@angular/core';
-import { windowTime } from 'rxjs';
+import { CommonModule } from '@angular/common';
+
 
 @Component({
   selector: 'app-navbar',
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss'
 })
@@ -37,10 +38,10 @@ export class NavbarComponent {
       
       this.showScrollToTop = (isMobile && window.scrollY > 200);
         
-      if (window.scrollY > 5) {
+      if (window.scrollY > 10) {
           this.renderer.setStyle(document.getElementById('logo'), 'width', '5rem');
           navbar.classList.add('shrink');
-      } else if (window.scrollY <= 1) { 
+      } else if (window.scrollY <= 2) { 
           this.renderer.setStyle(document.getElementById('logo'), 'width', '10rem');
           navbar.classList.remove('shrink');
     }

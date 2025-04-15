@@ -1,6 +1,6 @@
 
 .contact-info {
-    background-color: whitesmoke;
+    background-color: var(--current-line);
     border-radius: 50px;
     display: flex;
     justify-content: space-around;
@@ -8,6 +8,15 @@
 }
 
 .contact-description {
+	color: var(--foreground);
     margin: 30px;
     text-align: center;
+}
+
+.contact-description a {
+	text-decoration: none;
+	color: var(--purple);
+	&:hover {
+		color: var(--cyan);
+	}
 }
