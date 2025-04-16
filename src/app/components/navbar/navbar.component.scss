@@ -4,14 +4,14 @@
     top: 10px;
     display: flex;
     justify-content: space-between;
+	align-content: center;
     background-color: var(--current-line);
     align-items: center;
     border-radius: 50px;
     transition: all 0.5s ease;
     border: 0;
     margin: 10px auto;
-    padding: 0 30px;
-    width: 90%;
+    width: 95%;
 }
 
 .scroll-to-top {
@@ -47,6 +47,7 @@
 @media (max-width: 864px) {
     .navbar {
         position: static;
+		width: 90%;
         flex-direction: column;
         justify-content: space-around;
         padding: 5px;
@@ -68,6 +69,7 @@
     margin: 0;
     padding: 1rem;
     border-radius: 50px;
+	margin: 0 20px;
 }
 
 .nav-list li {
@@ -86,6 +88,7 @@
     width: 10rem;
     border-radius: 50%;
     transition: all 0.3s ease; 
+	margin: 0 20px;
 }
 
 .logo-img:hover {
