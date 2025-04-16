@@ -10,12 +10,13 @@
 }
 
 .about-me-description {
-	margin: 30px auto;
+	margin: 10px auto;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     width: 30%;
+	padding: 1rem;
 }
 
 .about-me-description-text {
@@ -37,24 +38,27 @@
 }
 
 .about-me-picture {
-	margin: 30px auto;
+	margin: 0 auto;
     width: 30%;
-    align-items: center;
+	padding: 1rem;
     text-align: center;
+	align-content: center;
 }
 
 .img-profile {
-    width: 20rem;
+    // width: 20rem;
     border-radius: 50px;
-	width: 100%;
-	max-height: 20rem;
-	max-width: 20rem;
+	padding: 1rem;
+	width: 90%;
+	max-height: 30rem;
+	max-width: 30rem;
 }
 
 .personal-links {
 	margin: 30px auto;
     text-align: center;
     width: 30%;
+	padding: 2rem;
 }
 
 .personal-links a {
@@ -84,7 +88,7 @@
         justify-content: space-around;
         align-items: center;
         width: 90%;
-        height: 60rem;
+        height: 70rem;
     }
     
     .about-me-description {
@@ -98,5 +102,4 @@
     .personal-links {
         width: 90%;
     }
-
 }

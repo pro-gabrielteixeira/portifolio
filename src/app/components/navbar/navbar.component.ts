@@ -11,6 +11,7 @@ import { CommonModule } from '@angular/common';
 export class NavbarComponent {
 
   showScrollToTop = false;
+  isShrink = false;
   constructor(private renderer: Renderer2) {}
   
   public sectionClick(navSection: string) {
@@ -18,7 +19,7 @@ export class NavbarComponent {
     const element = document.getElementById(navSection);
     
     if (element && element != document.getElementById('navbar')) {
-      if (window.scrollY <= 5) {
+      if (this.isShrink) {
         scrollTo({top: 70, behavior: 'smooth'})
       }
       setTimeout(() => {
@@ -38,12 +39,14 @@ export class NavbarComponent {
       
       this.showScrollToTop = (isMobile && window.scrollY > 200);
         
-      if (window.scrollY > 10) {
+      if (window.scrollY > 40) {
           this.renderer.setStyle(document.getElementById('logo'), 'width', '5rem');
           navbar.classList.add('shrink');
-      } else if (window.scrollY <= 2) { 
-          this.renderer.setStyle(document.getElementById('logo'), 'width', '10rem');
-          navbar.classList.remove('shrink');
+		  this.isShrink = false;
+		} else if (window.scrollY < 3) { 
+			this.renderer.setStyle(document.getElementById('logo'), 'width', '10rem');
+			navbar.classList.remove('shrink');
+			this.isShrink = true;
     }
 
   }
