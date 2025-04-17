@@ -4,19 +4,38 @@
     border-radius: 50px;
     display: flex;
     justify-content: space-around;
-    margin: 30px;
+    margin: 30px auto;
+	width: 95%;
+	
+	@media (max-width: 864px) {
+		width: 90%;
+	}
+}
+
+.contact-description h3 {
+	display: block;
+	text-align: center;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.contact-info p {
+	padding: 1rem;
 }
 
 .contact-description {
 	color: var(--foreground);
-    margin: 30px;
+    margin: 0 auto;
     text-align: center;
+	line-height: 1.6rem;
+	font-size: 1.1rem;
 }
 
 .contact-description a {
 	text-decoration: none;
 	color: var(--purple);
 	&:hover {
-		color: var(--cyan);
+		color: var(--pink);
+		text-shadow: 0 3px 15px var(--purple);
 	}
 }

@@ -1,13 +1,18 @@
 
-
 .div-projects {
-    display: flex;
-    justify-content: space-evenly;
-	margin: 20px auto;
-    flex-wrap: wrap;
+	margin: 30px auto;
     border-radius: 50px;
 	width: 95%;
 	background-color: var(--current-line);
+	line-height: 1.6rem;
+	font-size: 1.1rem;
+}
+
+.div-projects h3 {
+	display: block;
+	text-align: center;
+	margin: 0 auto;
+	padding: 20px;
 }
 
 app-project {

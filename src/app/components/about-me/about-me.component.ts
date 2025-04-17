@@ -21,7 +21,7 @@ export class AboutMeComponent {
       if (span) {
         span.innerHTML = this.displayText;
       }
-      setTimeout(()=> this.typeText( index + 1), 70);
+      setTimeout(()=> this.typeText( index + 1), 50);
     }
   }
 }

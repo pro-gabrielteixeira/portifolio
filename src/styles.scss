@@ -6,6 +6,7 @@
 	--comment: #6272a4;
 	--cyan: #8be9fd;
 	--purple: #bd93f9;
+	--pink: #ff79c6; 
   }
 
 body {
@@ -14,6 +15,8 @@ body {
     overflow-y: auto;
 	background-color: var(--background);
 	color: var(--foreground);
+	max-width: 2000px;
+	margin: auto;
 }
 
 .raleway-font {

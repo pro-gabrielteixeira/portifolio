@@ -1,12 +1,22 @@
 .about-me {
     background-color: var(--current-line);
     border-radius: 50px;
-    margin: 20px auto;
-    display: flex;
-    justify-content: space-around;
+    margin: 30px auto;
     align-items: center;
     width: 95%;
-    height: 20rem;
+    height: 30rem;
+}
+
+.about-me h3 {
+	display: block;
+	text-align: center;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.about-me-info {
+	display: flex;
+	justify-content: space-between;
 }
 
 .about-me-description {
@@ -22,6 +32,7 @@
 .about-me-description-text {
     line-height: 4rem;
     font-size: 1.5rem;
+	height: 20rem;
 	color: var(--foreground);
 }
 
@@ -63,9 +74,8 @@
 .personal-links a {
     display: block;
     padding: 1.5rem;
-    background-color: var(--purple);
-	color: var(--foreground);
-    color: whitesmoke;
+    border: 1px solid var(--purple);
+	color: var(--purple);
     margin: 1rem;
     border-radius: 50px;
     text-decoration: none;
@@ -74,7 +84,7 @@
 	&:hover {
 		transition: all 0.3s ease;
 		transform: scale(1.1);
-		background-color: var(--comment);
+		color: var(--pink);
 		box-shadow: 0 4px 15px var(--purple);
 	}
 }
@@ -82,23 +92,42 @@
 @media (max-width: 864px) {
     .about-me {
         margin: 20px auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
         align-items: center;
         width: 90%;
-        height: 70rem;
+        height: 60rem;
+		display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
+	
+	.about-me-info {
+		height: 50rem;
+		display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+	}
     
     .about-me-description {
         width: 90%;
+		height: 10rem;
     }
-    
+	
+    .img-profile {
+		width: 90%;
+		margin: 0;
+		height: 16rem;
+		width: 16rem;
+	}
+
     .about-me-picture {
-        width: 90%;
+		width: 90%;
+		margin: 0;
+		height: 16rem;
     }
     
     .personal-links {
-        width: 90%;
+		width: 90%;
+		margin: 0;
+		height: 16rem;
     }
 }
