@@ -30,10 +30,11 @@
 }
 
 .about-me-description-text {
-    line-height: 4rem;
+	line-height: 4rem;
     font-size: 1.5rem;
-	height: 20rem;
+	height: 70%;
 	color: var(--foreground);
+	align-content: center;
 }
 
 .cursor {
@@ -62,6 +63,7 @@
 	width: 90%;
 	max-height: 19rem;
 	max-width: 19rem;
+	
 }
 
 .personal-links {
@@ -69,6 +71,8 @@
     text-align: center;
     width: 30%;
 	padding: 2rem;
+	align-content: center;
+
 }
 
 .personal-links a {
@@ -93,6 +97,7 @@
     .about-me {
         margin: 20px auto;
         align-items: center;
+		align-content: center;
         width: 90%;
         height: 60rem;
 		display: flex;
@@ -101,33 +106,44 @@
     }
 	
 	.about-me-info {
-		height: 50rem;
+		height: 55rem;
 		display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: space-around;
 	}
     
+	.about-me h3 {
+		width: 90%;
+	}
+
     .about-me-description {
         width: 90%;
-		height: 10rem;
+		height: 30%;
+		margin: 0 auto;
+		padding: 0;
     }
 	
-    .img-profile {
-		width: 90%;
-		margin: 0;
-		height: 16rem;
-		width: 16rem;
+	.about-me-description-text {
+		line-height: 4rem;
+		font-size: 1.5rem;
+		height: 100%;
+		color: var(--foreground);
 	}
 
     .about-me-picture {
 		width: 90%;
-		margin: 0;
-		height: 16rem;
+		margin: 0 auto;
+		height: 30%;
     }
     
     .personal-links {
 		width: 90%;
-		margin: 0;
-		height: 16rem;
+		margin: 0 auto;
+		height: 30%;
     }
+
+	.img-profile {
+		width: 100%;
+		margin: 0;
+	}
 }
